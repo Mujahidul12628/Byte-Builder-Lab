@@ -1,33 +1,57 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* =========================================== */
+/* canvas main page */
+/* components/SignatureCanvas.module.css */
+.parent{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: start;
+}
+.container {
+  width: 60%;
+  height: 100vh;
+  
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.sigContainer {
+  width: 100%;
+  height: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 2px solid rgb(143, 143, 146);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.sigPad {
+  width: 100%;
+  height: 100%;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.buttonContainer{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+
 }
+
+.buttons {
+  width: 10%;
+  height: 30px;
+  border: 2px solid rgb(112, 107, 107);
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.sigImage {
+  background-size: 200px 50px;
+  width: 350px;
+  height: 150px;
+  margin: 1%;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(143, 143, 146);
+}
+
+/* =========================================== */
